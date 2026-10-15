@@ -9,7 +9,7 @@ def xcoms_dag_kwargs():
     @task.python
     def first_task(**kwargs):
 
-        # Extracting 'ti' from kwargs to push XComs manually
+        # Extracting 'ti' from kwargs to push XComs manually (ti - task instance )
         ti = kwargs['ti']
         
         print("Extracting data... This is the first task")
